@@ -1,9 +1,6 @@
 """
 @author: Abdelrahman Mahmoud Gaber
 @email: abdulrahman.mahmoud1995@gmail.com
-
-@author: Atiqah Liyana
-@email: atiqahliyana.work@gmail.com
 """
 
 from enum import IntEnum
@@ -26,7 +23,7 @@ AT_CMD_PREFIX = "AT+"
 
 COMMAND_REGEX = r"(?:\^|\+)([A-Z0-9]*):" # command regex to check if data contains a command
 
-AT_COMMANDS = {  # definations for query and set 
+AT_COMMANDS = {
 
     "LRSEND" : ( 
         ("port"   , int),
@@ -61,10 +58,6 @@ AT_COMMANDS = {  # definations for query and set
 
     "ACTIVEMODE": (
         ("mode", int),
-    ),
-    
-    "APPEUI": (
-        ("eui", str)
     ),
 
 }
@@ -105,10 +98,6 @@ AT_COMMANDS_REPORT = {
 
     "STATUS": ( 
         ("status", int),
-    ),
-    
-    "APPEUI": ( 
-        ("eui", int),
     ),
 }
 
